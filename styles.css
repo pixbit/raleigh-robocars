@@ -1,0 +1,66 @@
+html {
+  background: #fff;
+  box-sizing: border-box;
+  color: #6e6e6e;
+}
+
+body {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 1.66667
+}
+
+.row {
+  max-width: 960px;
+}
+
+main {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+main>section {
+  min-height: 720px;
+}
+
+/* TYPOGRAPHY */
+
+h1,h2,h3,h4,h5,h6 {
+  color: #6e6e6e;
+  font: 300 10px / 1.6 'open sans',arial,sans-serif
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.11111;
+  margin: 2.77778em 0 1.11111em
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.375;
+  margin: 1.66667em 0 1.66667em
+}
+
+p {
+  color: #6e6e6e;
+  margin: 2em 0
+}
+
+a {
+  color: #6e6e6e;
+  font-weight: 400;
+  opacity: .8;
+  text-decoration: none;
+  transition: color .2s,opacity .2s
+}
+
+em,strong {
+  font-weight: 400
+}
+
+a:active,a:focus,a:hover {
+  color: #6e6e6e;
+  opacity: 1
+}

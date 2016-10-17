@@ -2,44 +2,59 @@
 <html lang="en-us">
 
 <head>
-<meta charset="utf-8">
-<title>Raleigh Robocars</title>
-<style type="text/css"></style>
+  <meta charset="utf-8">
+  <title>Raleigh Robocars</title>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="foundation.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="hero-video.css">
 </head>
 
 <body>
+  <header>
+    <nav class="row align-justify">
+      <h1 class="small-4 columns"><a href="#hero-video">Raleigh Robocars</a></h1>
+      <ul class="menu small-4 columns">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#on-the-road">On the Road</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="hero-video">
+      <div class="row align-middle">
+        <div class="small-7 columns">
+          <h1>What if it could be easier and safer for everyone to get around?</h1>
+          <p>To start, we’re building prototype vehicles that are designed to take you where you want to go at the push of a button—no driving required.</p>
+          <a href="#get-one">Get one</a>
+        </div>
+      </div>
+    </section>
 
-<header>
-  <nav>
-    <h1>Raleigh Robocars</h1>
-    <a href="#how-it-works">How it works</a>
-    <a href="#on-the-road">On the Road</a>
-    <a href="#get-yours">Get yours</a>
-  </nav>
-  <h2>What if it could be easier and safer for everyone to get around?</h2>
-  <p>To start, we’re building prototype vehicles that are designed to take you where you want to go at the push of a button—no driving required.</p>
-  <button>Get One</button>
-</header>
-
-<div id="content-canvas">
-  <section id="how-it-works">
-    <h2>Navigating city streets</h2>
-    <h3>We’ve taught our cars to navigate through many complicated scenarios on city streets.</h3>
-    <p>Our cars use their sensors and software to sense objects like pedestrians, cyclists, vehicles and more, and are designed to safely drive around them.</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/bDOnn0-4Nq8" frameborder="0" allowfullscreen></iframe>
-  </section>
-  <section id="on-the-road">
-    <h2>On the road</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uCezICQNgJU" frameborder="0" allowfullscreen></iframe>
-  </section>
-  <section id="get-yours">
-    <h2>Get yours</h2>
-    <button>Get One</button>
-  </section>
-</div>
-
-<footer></footer>
-
+    <section id="how-it-works" class="row">
+      <h1>Navigating city streets</h1>
+      <h2>We’ve taught our cars to navigate through many complicated scenarios on city streets.</h2>
+      <p>Our cars use their sensors and software to sense objects like pedestrians, cyclists, vehicles and more, and are designed to safely drive around them.</p>
+      <div class="flex-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bDOnn0-4Nq8" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  
+    <section id="on-the-road" class="row">
+      <h2>On the road</h2>
+      <div class="flex-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uCezICQNgJU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+  
+  <footer></footer>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>

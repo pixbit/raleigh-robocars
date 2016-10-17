@@ -1,0 +1,26 @@
+#hero-video {
+  display: flex;
+  background: grey;
+}
+
+#hero-video h1, #hero-video p{
+  color: white;
+  text-align: left;
+}
+
+#hero-video h1 {
+  font-weight: 500;
+  font-size: 34px;
+}
+
+#hero-video p {
+  font-size: 18px;
+}
+
+#hero-video a {
+  float: left;
+  color: white;
+  border: 2px solid;
+  padding: 6px 20px;
+  font-size: 18px;
+}
