@@ -17,10 +17,11 @@ body {
 main {
   padding-top: 75px;
   padding-bottom: 75px;
-  text-align: center;
 }
 
 main>section {
+  padding-top: 100px;
+  text-align: center;
   min-height: 720px;
 }
 
@@ -33,17 +34,19 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   font-size: 36px;
+  font-weight: 500;
   line-height: 1.11111;
-  margin: 2.77778em 0 1.11111em
+  margin-bottom: 1.11111em
 }
 
 h2 {
-  font-size: 24px;
-  line-height: 1.375;
-  margin: 1.66667em 0 1.66667em
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.375
 }
 
 p {
+  font-size: 18px;
   color: #6e6e6e;
   margin: 2em 0
 }
