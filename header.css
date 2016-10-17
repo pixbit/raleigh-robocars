@@ -34,3 +34,36 @@ header h1 a {
 header ul {
   float: right
 }
+
+footer:before {
+  background: url(images/footer.png) repeat-x center top;
+  background-size: auto 300px;
+  content: '';
+  display: block;
+  height: 300px;
+}
+
+footer {
+  font-size: 14px;
+}
+
+#bottom-links {
+  height: 75px;
+}
+
+footer:after {
+  -webkit-transform: translate(-50%,0);
+  -moz-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  -o-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  background: url(images/footer-car.png) no-repeat center center;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 85px;
+  left: 50%;
+  position: relative;
+  bottom: 85px;
+  width: 132px;
+}

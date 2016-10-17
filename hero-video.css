@@ -1,6 +1,6 @@
 #hero-video {
   display: flex;
-  background: grey;
+  background: url(images/prototype-with-tint.png) center / cover
 }
 
 #hero-video h1, #hero-video p{
