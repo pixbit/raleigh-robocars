@@ -36,7 +36,7 @@ header ul {
 }
 
 footer:before {
-  background: url(images/footer.png) repeat-x center top;
+  background: url('/images/footer.png') repeat-x center top;
   background-size: auto 300px;
   content: '';
   display: block;
@@ -57,7 +57,7 @@ footer:after {
   -ms-transform: translate(-50%,0);
   -o-transform: translate(-50%,0);
   transform: translate(-50%,0);
-  background: url(images/footer-car.png) no-repeat center center;
+  background: url('/images/footer-car.png') no-repeat center center;
   background-size: contain;
   content: '';
   display: block;
