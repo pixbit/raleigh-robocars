@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './ColorPickerComponent.scss';
 class ColorPickerComponent extends React.Component {
   constructor(props) {
     super(props)
@@ -36,7 +36,7 @@ class ColorPickerComponent extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="row">
         <h3>Current color: {this.state.color || 'no color selected'} {this.state.colorLabel}</h3>
         <ul>
           {this.createColors()}
