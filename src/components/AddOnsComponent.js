@@ -42,7 +42,7 @@ class AddOnsComponent extends React.Component {
         this.state.totalPrice += item.price:
         this.state.totalPrice -= item.price,
       items: this.items
-    })
+    });
   }
 
   createProductRow(item, index) {
@@ -80,7 +80,7 @@ class AddOnsComponent extends React.Component {
           </tbody>
         </table>
       </div>
-    )
+    );
   }
 }
 export default AddOnsComponent;
