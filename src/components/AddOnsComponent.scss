@@ -1,0 +1,27 @@
+#add-ons {
+  table {
+    font-size: 1rem;
+    background: none;
+    color: #AAA;
+    thead {
+      display: none;
+    }
+    tbody, thead {
+      background: none;
+      border: none;
+       tr, td {
+        background: none;
+      }
+    }
+    td.pricing-column {
+      font-size: .75rem;
+    }
+
+    button.success {
+      background: #AAA;
+    }
+    button {
+      background: #BD304F;
+    }
+  }
+}
