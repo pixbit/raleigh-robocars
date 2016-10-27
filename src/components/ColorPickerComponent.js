@@ -3,10 +3,8 @@ import './ColorPickerComponent.scss';
 class ColorPickerComponent extends React.Component {
   constructor(props) {
     super(props)
-    this.changeColor = this.changeColor.bind(this);
-    this.state = {
-      color: null
-    };
+    this.state = {};
+    console.log(props);
   }
 
   createColors() {
@@ -22,7 +20,7 @@ class ColorPickerComponent extends React.Component {
         <li
           className={this.state.color === x.color && 'active'}
           style={{background:x.color}}
-          onClick={this.changeColor.bind(this, x.color, x.label)}
+          onClick={this.props.changeColor.bind(this, x.color, x.label)}
           key={index}>
           {x.color}
         </li>
@@ -36,9 +34,9 @@ class ColorPickerComponent extends React.Component {
 
   render() {
     return (
-      <div className="row">
-        <h3>Current color: {this.state.color || 'no color selected'} {this.state.colorLabel}</h3>
-        <ul>
+      <div id="color-picker" className="columns small-12 large-2">
+        <h3 className="columns small-12">Current color: {this.props.carColor || 'no color selected'}</h3>
+        <ul className="columns small-12">
           {this.createColors()}
         </ul>
       </div>
