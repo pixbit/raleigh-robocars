@@ -8,6 +8,7 @@ import NavbarComponent from './NavbarComponent';
 import TitleComponent from './TitleComponent';
 import ContentSectionsComponent from './ContentSectionsComponent';
 
+import CustomizerContainerComponent from './CustomizerContainerComponent';
 // local variables
 let companyTitle = 'Raleigh Robocars';
 let contentSectionsInfo = [
@@ -38,6 +39,7 @@ let HomePageComponent = () => {
         {contentSectionsInfo.map(createContentSectionsComponent)}
       </main>
       <FooterComponent />
+      <CustomizerContainerComponent />
     </div>
   );
 };

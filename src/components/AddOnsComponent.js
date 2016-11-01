@@ -1,7 +1,8 @@
 import React from 'react';
+import './AddOnsComponent.scss';
 class AddOnsComponent extends React.Component {
   constructor() {
-    super()
+    super();
     this.items = [
       {
         chosen: false,
@@ -43,6 +44,7 @@ class AddOnsComponent extends React.Component {
       <tr key={index}>
         <td>
           <button
+            className={(product.chosen ? 'danger' : 'success') + ' button'}
             onClick={this.calculatePrice.bind(this, product, index)}>
             {product.chosen ? 'REMOVE': 'ADD'}
           </button>
@@ -58,22 +60,24 @@ class AddOnsComponent extends React.Component {
   }
   render() {
     return(
-      <div className="row">
-        <div className="columns small-12">
-          <h3>Total Price of Add-ons: ${this.state.totalPrice}</h3>
+      <div className="columns small-12 large-3">
+        <div className="row" id="add-ons">
+          <div className="columns small-12">
+            <h3>Total Price of Add-ons: ${this.state.totalPrice}</h3>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Select</td>
+                <td>Description</td>
+                <td>Price</td>
+              </tr>
+            </thead>
+            <tbody>
+              {this.items.map(this.createProductRow, this)}
+            </tbody>
+          </table>
         </div>
-        <table>
-          <thead>
-            <tr>
-              <td>Select</td>
-              <td>Description</td>
-              <td>Price</td>
-            </tr>
-          </thead>
-          <tbody>
-            {this.items.map(this.createProductRow, this)}
-          </tbody>
-        </table>
       </div>
     )
   }

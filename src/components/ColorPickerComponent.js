@@ -1,23 +1,23 @@
 import React from 'react';
-
+import './ColorPickerComponent.scss';
 class ColorPickerComponent extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.colors = [
       {
         color: '#FFFFFF',
         label: 'white'
       },
       {
-        color: '#000000',
-        label: 'black'
+        color: '#AAAAAA',
+        label: 'ghost'
       },
       {
         color: '#3D3D3D',
         label: 'smoke'
       },
       {
-        color: '#BD304f',
+        color: '#BD304F',
         label: 'fierce'
       },
       {
@@ -25,26 +25,15 @@ class ColorPickerComponent extends React.Component {
         label: 'orchid'
       }
     ];
-    this.state = {
-      colors: this.colors,
-      colorChosen: null
-    };
-    this.choseColor = this.choseColor.bind(this);
-  }
-
-  choseColor(colorObject) {
-    this.setState({
-      colorChosen: colorObject.color,
-      colorLabel: colorObject.label
-    })
+    this.state = {};
   }
 
   displayColorSelection(colorObject, index) {
     return (
       <li
       key={index}
-      onClick={this.choseColor.bind(this, colorObject)}
-      className={colorObject.color === this.state.colorChosen && 'active'}
+      onClick={this.props.changeColor.bind(this, colorObject.color, colorObject.label)}
+      className={colorObject.color === this.state.color && 'active'}
       style={{background: colorObject.color}}>
         {colorObject.color}
       </li>
@@ -53,10 +42,10 @@ class ColorPickerComponent extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3>Color Chosen: {this.state.colorChosen || 'none'} {this.state.colorLabel}</h3>
+      <div id="color-picker" className="columns small-12 large-2">
+        <h3>Color Chosen: {this.props.carColor || 'none'}</h3>
         <ul>
-          {this.state.colors.map(this.displayColorSelection, this)}
+          {this.colors.map(this.displayColorSelection, this)}
         </ul>
       </div>
     );

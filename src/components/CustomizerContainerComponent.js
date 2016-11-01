@@ -2,6 +2,7 @@ import React from 'react';
 
 import AddOnsComponent from './AddOnsComponent';
 import ColorPickerComponent from './ColorPickerComponent';
+import CarPreviewComponent from './CarPreviewComponent';
 import './CustomizerContainerComponent.scss';
 
 class CustomizerContainerComponent extends React.Component {
@@ -21,7 +22,8 @@ class CustomizerContainerComponent extends React.Component {
   render() {
     return (
       <div id="customizer" className="row">
-        <ColorPickerComponent />
+        <ColorPickerComponent changeColor={this.changeColor} carColor={this.state.carColor}/>
+        <CarPreviewComponent carColor={this.state.carColor} />
         <AddOnsComponent />
       </div>
     );
